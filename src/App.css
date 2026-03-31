@@ -2,6 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
 
+@theme {
+  --font-main: "Poppins", sans-serif;
+  --font-secondary: "Yanone Kaffeesatz", sans-serif;
+
+  --color-primary: #E7BC0F;
+  --color-secondary: #808080;
+  --color-success: #27C237;
+  --color-error: #F64E34;
+  --color-warning: #EB8509;
+  --color-info: #275BC2;
+}
+
 :root {
   --primary-color: #E7BC0F;
   --secondary-color: #808080;
