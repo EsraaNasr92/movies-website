@@ -18,7 +18,7 @@ function App() {
           {/* Add your Movie Grid here */}
         </section>
 
-        <aside className="w-[380px] flex-shrink-0 px-6 py-8 ">
+        <aside className="w-[380px] flex-shrink-0 px-6 py-8">
           <HotNews />
         </aside>
 
