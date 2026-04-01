@@ -70,7 +70,7 @@ export default function Heroslider(){
                             <button className="px-5 py-2 bg-black/60 text-primary rounded-lg w-[143px] border border-[var(--color-primary)]">Trailer</button>
                         </div>
                     </div>
-                    <div className="absolute bottom-5 left-170 flex gap-15">
+                    <div className="absolute bottom-5 left-165 flex gap-6">
                         <button onClick={prevSlider} className='w-7'><img src={LeftArrow} alt="left arrow" /></button>
                         <button onClick={nextSlider} className='w-7'><img src={RightArrow} alt="right arrow" /></button>
                     </div>

@@ -4,6 +4,7 @@ import Blog from '../assets/images/icons/blog.svg';
 import ContactUs from '../assets/images/icons/contact.svg';
 import Discover from '../assets/images/icons/discover.svg';
 import HelpCenter from '../assets/images/icons/help.svg';
+import Plan from '../assets/images/icons/plan.svg';
 import Settings from '../assets/images/icons/settings.svg';
 import Watchlist from '../assets/images/icons/watchlist.svg';
 
@@ -43,9 +44,9 @@ export default function Menu(){
     ];
 
     return(
-        <section className='relative p-6 w-[240px] h-screen border-fade'>
+        <section className='relative p-6 border-fade'>
             <img src={Logo} alt="logo" className='p-5  pb-15'/>
-
+            
             <span className='text-secondary'>Menu</span>
 
             <ul className='mt-2'>
@@ -71,12 +72,17 @@ export default function Menu(){
                             alt={helpItem.link}
                             className='w-[24px]'
                         />
-                        <h4 className='text-secondary font-primary text-[18px]'>{helpItem.link}</h4> 
+                        <h4 className='text-secondary font-primary text-[18px]'>{helpItem.link}</h4>
                     </li>
                 ))}
             </ul>
 
-
+            <div className='check-plans text-[14px] mt-[75px] p-4 text-white text-center plan-border flex flex-col items-center'>
+                <p>Click the button below to see the plans</p>
+                <button className='flex items-center gap-2 mt-8 border p-3 rounded-xl border-[var(--color-primary)]'>
+                    <img src={Plan} alt="check plans icons" className='w-[24px]'/> See Plans
+                </button>
+            </div>
         </section>
     );
 }
