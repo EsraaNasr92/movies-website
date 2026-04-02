@@ -6,7 +6,7 @@ import LikeIcon from '../assets/images/icons/like.svg';
 import RateIcon from '../assets/images/icons/rate.svg';
 import ViewArrow from '../assets/images/icons/viewall.svg';
 
-export default function RecommendedForYou(){
+export default function TrendingMovies(){
     const filmCards = [
         {
             id: "1",
@@ -35,7 +35,21 @@ export default function RecommendedForYou(){
             title: "House of the Dragon",
             genere: ["Action", "Adventure", "Fantasy"],
             rate: "8.4"
-        }
+        },
+        {
+            id: "4",
+            image: Film3,
+            title: "Gangs of London",
+            genere: ["Action", "Drama", "Crime"],
+            rate: "8.0"
+        },
+        {
+            id: "5",
+            image: Film4,
+            title: "House of the Dragon",
+            genere: ["Action", "Adventure", "Fantasy"],
+            rate: "8.4"
+        },
     ];
 
     const filmCard = filmCards;
@@ -43,7 +57,7 @@ export default function RecommendedForYou(){
     return(
         <section className="px-5 text-white mt-[33px]">
             <div className="flex justify-between items-center">
-                <h2 className='font-secondary text-[20px]'>Recommended for You</h2>
+                <h2 className='font-secondary text-[20px]'>Trending Movies</h2>
                 <div className="view">
                     <a href="#" className='flex items-center gap-2 cursor-pointer'>
                         View All

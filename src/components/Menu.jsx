@@ -44,7 +44,7 @@ export default function Menu(){
     ];
 
     return(
-        <section className='relative p-6 border-fade'>
+        <section className='relative p-6 border-fade h-screen'>
             <img src={Logo} alt="logo" className='p-5  pb-15'/>
             
             <span className='text-secondary'>Menu</span>
