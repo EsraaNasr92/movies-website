@@ -77,9 +77,9 @@ export default function Menu(){
                 ))}
             </ul>
 
-            <div className='check-plans text-[14px] mt-[75px] p-4 text-white text-center plan-border flex flex-col items-center'>
+            <div className='check-plans text-[14px] mt-[75px] mb-5 p-4 text-white text-center plan-border flex flex-col items-center'>
                 <p>Click the button below to see the plans</p>
-                <button className='flex items-center gap-2 mt-8 border p-3 rounded-xl border-[var(--color-primary)] block cursor-pointer'>
+                <button className='flex items-center gap-2 mt-5 border p-3 rounded-xl border-[var(--color-primary)] block cursor-pointer'>
                     <img src={Plan} alt="check plans icons" className='w-[24px]'/> See Plans
                 </button>
             </div>

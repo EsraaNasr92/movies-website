@@ -76,12 +76,12 @@ export default function HotNews(){
             <section className="flex text-white gap-[29px] overflow-x-auto w-[240px] rounded-xl">
                     <div className="card rounded-[20px] p-3 w-224">
                         <img src={Image} alt="image 1" />
-                        <div className="title flex mt-8 mb-4">
+                        <div className="title flex mt-8 mb-5">
                             <img src={VeryfiedIcon} alt="veryfied icon" className="pr-2"/>
-                            <h4 className="text-primary font-secondary font-bold">Hot News</h4>
+                            <h4 className="text-primary font-secondary">Hot News</h4>
                         </div>
                         
-                            <div key={currentItem.id} className="text mb-13 font-main text-[13px]">
+                            <div key={currentItem.id} className="text mb-20 font-main text-[14px]/6">
                             {currentItem.description.map((line, i) => (
                                 <p key={i} className="mb-4">
                                     {line}

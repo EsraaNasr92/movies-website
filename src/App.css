@@ -1,10 +1,12 @@
-@import "tailwindcss";
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+@import "tailwindcss";
 
 @theme {
   --font-main: "Poppins", sans-serif;
-  --font-secondary: "Yanone Kaffeesatz", sans-serif;
+  --font-secondary: "DynaPuff", system-ui;
 
   --color-primary: #E7BC0F;
   --color-secondary: #808080;
@@ -12,21 +14,6 @@
   --color-error: #F64E34;
   --color-warning: #EB8509;
   --color-info: #275BC2;
-}
-
-:root {
-  --primary-color: #E7BC0F;
-  --secondary-color: #808080;
-  --success-color: #27C237;
-  --error-color: #F64E34;
-  --warning-color: #EB8509;
-  --info-color: #275BC2;
-  --main-font: "Poppins", sans-serif;
-  --secondary-font: "Yanone Kaffeesatz", sans-serif;
-  --background-color: #F5F5F5;
-  --text-color: #333333;
-  --border-radius: 4px;
-  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .border-fade {
@@ -100,10 +87,10 @@
 .film-card::before {
   content: "";
   position: absolute;
-  inset: -6px;
+  inset: -12px;
   border-radius: 12px;
   padding: 1.5px;
-  background: var(--secondary-color);
+  background: var(--color-secondary);
   opacity: 0.2;
   z-index: -1;
 }

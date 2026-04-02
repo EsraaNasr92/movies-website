@@ -41,22 +41,26 @@ export default function RecommendedForYou(){
     const filmCard = filmCards;
 
     return(
-        <section className="text-white mt-[33px]">
-            <div className="flex justify-between items-center ">
-                <h2 className='font-secondary'>Recommended for You</h2>
+        <section className="px-5 text-white mt-[33px]">
+            <div className="flex justify-between items-center">
+                <h2 className='font-secondary text-[20px]'>Recommended for You</h2>
                 <div className="view">
                     <a href="#" className='flex items-center gap-2 cursor-pointer'>
                         View All
-                        <img src={ViewArrow} alt="view all icon" className='w-[24px]'/>
+                        <img
+                            src={ViewArrow}
+                            alt="view all icon"
+                            className='w-[24px]'
+                        />
                     </a>
                 </div>
             </div>
 
-            <div className='cards flex mt-[20px] gap-4 text-center rounded-xl'>
+            <div className='cards flex mt-[40px] gap-10 text-center rounded-xl'>
                 {filmCard.map((card) => (
                     <div
                         key={card.id}
-                        className="film-card relative w-1/4 rounded-xl">
+                        className="film-card relative rounded-xl">
                         <img
                             src={card.image}
                             alt={card.title}

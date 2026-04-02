@@ -3,6 +3,7 @@ import Heroslider from './components/HeroSlider';
 import HotNews from './components/HotNews';
 import Menu from './components/Menu';
 import RecommendedForYou from './components/RecommendedForYou';
+import Header from './components/header/Header';
 
 function App() {
   return (
@@ -14,14 +15,20 @@ function App() {
           <Menu />
         </aside>
 
-        <section className="flex-1 px-5 py-8 overflow-y-auto">
-          <Heroslider />
-          <RecommendedForYou />
-        </section>
+        <div className='flex-1 flex flex-col'>
+            <Header />
 
-        <aside className="w-[380px] flex-shrink-0 px-6 py-8">
-          <HotNews />
-        </aside>
+            <div className='flex flex-1 overflow-hidden py-1'>
+              <section className="flex-1 px-5 overflow-y-auto">
+                <Heroslider />
+                <RecommendedForYou />
+              </section>
+
+              <aside className="w-[290px] flex-shrink-0 px-5">
+                <HotNews />
+              </aside>
+            </div>
+        </div>
 
       </main>
     </div>

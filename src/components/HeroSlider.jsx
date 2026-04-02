@@ -18,16 +18,16 @@ export default function Heroslider(){
         {
             image: HeroImage,
             title: "27 dresses",
-            rate: "9.2",
-            genere: ["Action", "Adventure", "Drama"],
-            description:"It's the story of the intricate and bloody battles of several noble families in the fictional land of Westeros. These families, including the Starks, the Lannisters, and the Targaryens, fight for control of the Iron Throne, the symbol of power in the Seven Kingdoms.",
+            rate: "6.1",
+            genere: ["Comedy", "Romance"],
+            description:"After serving as a bridesmaid 27 times, Jane is shocked when her younger sister announces her engagement to the man she loves. Meanwhile, she also meets a cynical journalist who has a hidden agenda.",
         },
         {
             image: HeroImage,
             title: "How to lose a guy in 10 days",
-            rate: "9.2",
-            genere: ["Action", "Adventure", "Drama"],
-            description:"It's the story of the intricate and bloody battles of several noble families in the fictional land of Westeros. These families, including the Starks, the Lannisters, and the Targaryens, fight for control of the Iron Throne, the symbol of power in the Seven Kingdoms.",
+            rate: "6.5",
+            genere: ["Comedy", "Romance"],
+            description:"Benjamin is challenged by his co-workers to make a woman fall in love with him. On the other hand, Andie has to write an article on how to lose a guy in 10 days. Will they complete their given tasks?",
         },
     ];
     const movie = movies[current];
@@ -46,9 +46,13 @@ export default function Heroslider(){
         <section id="hero-section">
             <div className="slider relative">
                 <div className="slider-1 relative">
-                    <img src={movie.image} alt="Hero Image"/>
+                    <img
+                        src={movie.image}
+                        alt="Hero Image"
+                        className='w-full'
+                    />
                     <div className="data absolute left-5 bottom-5 bg-black/60 rounded-[20px] text-white w-100 p-5">
-                        <h1 className="title font-secondary">{movie.title}</h1>
+                        <h1 className="title font-secondary text-[25px]">{movie.title}</h1>
                         <div className="meta-data flex items-center gap-[10px] my-4">
                             <img src={IMDB} alt="IMDB rate" className='w-8'/> <b>{movie.rate}</b>
                             <div className="genere ml-3 flex gap-[5px] text-[15px]">
@@ -70,9 +74,13 @@ export default function Heroslider(){
                             <button className="px-5 py-2 bg-black/60 text-primary rounded-lg w-[143px] border border-[var(--color-primary)] block cursor-pointer">Trailer</button>
                         </div>
                     </div>
-                    <div className="absolute bottom-5 left-165 flex gap-6">
-                        <button onClick={prevSlider} className='w-7 block cursor-pointer'><img src={LeftArrow} alt="left arrow" /></button>
-                        <button onClick={nextSlider} className='w-7 block cursor-pointer'><img src={RightArrow} alt="right arrow" /></button>
+                    <div className="absolute bottom-5 right-5 flex gap-6">
+                        <button onClick={prevSlider} className='w-7 block cursor-pointer'>
+                            <img src={LeftArrow} alt="left arrow" />
+                        </button>
+                        <button onClick={nextSlider} className='w-7 block cursor-pointer'>
+                            <img src={RightArrow} alt="right arrow" />
+                        </button>
                     </div>
                 </div>
             </div>
