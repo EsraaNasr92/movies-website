@@ -2,6 +2,7 @@ import './App.css';
 import Heroslider from './components/HeroSlider';
 import HotNews from './components/HotNews';
 import Menu from './components/Menu';
+import RecommendedForYou from './components/RecommendedForYou';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
 
         <section className="flex-1 px-5 py-8 overflow-y-auto">
           <Heroslider />
-          {/* Add your Movie Grid here */}
+          <RecommendedForYou />
         </section>
 
         <aside className="w-[380px] flex-shrink-0 px-6 py-8">

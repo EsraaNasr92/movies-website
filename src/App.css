@@ -90,3 +90,24 @@
   z-index: 1000;
   background-color: black;
 }
+
+.film-card {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+}
+
+.film-card::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 12px;
+  padding: 1.5px;
+  background: var(--secondary-color);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.clip-card {
+  clip-path: path('M8 0C3.58172 0 0 3.58173 0 8.00001V238C0 242.418 3.58172 246 8 246H169C173.418 246 177 242.418 177 238V36C177 31.5817 173.418 28 169 28H157.297C152.879 28 149.297 24.4183 149.297 20V8C149.297 3.58172 145.715 0 141.297 0H8Z');
+}
