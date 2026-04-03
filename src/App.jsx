@@ -1,8 +1,11 @@
 import './App.css';
+import Banners from './components/Banners';
 import Genres from './components/Genres';
 import Header from './components/header/Header';
 import Heroslider from './components/HeroSlider';
 import HotNews from './components/HotNews';
+import ImdbTopMovies from './components/ImdbTopMovies';
+import ImdbTopSeries from './components/ImdbTopSeries';
 import Menu from './components/Menu';
 import RecommendedForYou from './components/RecommendedForYou';
 import TrendingMovies from './components/TrendingMovies';
@@ -34,7 +37,10 @@ function App() {
             <div>
               <TrendingMovies />
               <Genres />
+              <Banners />
               <TrendingSeries />
+              <ImdbTopMovies />
+              <ImdbTopSeries />
             </div>
         </div>
         
