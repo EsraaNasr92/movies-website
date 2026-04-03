@@ -1,4 +1,5 @@
 import './App.css';
+import Genres from './components/Genres';
 import Header from './components/header/Header';
 import Heroslider from './components/HeroSlider';
 import HotNews from './components/HotNews';
@@ -32,6 +33,7 @@ function App() {
             </div>
             <div>
               <TrendingMovies />
+              <Genres />
               <TrendingSeries />
             </div>
         </div>
