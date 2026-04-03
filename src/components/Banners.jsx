@@ -43,9 +43,12 @@ export default function Banners(){
                             className='relative'
                         />
                         <div className="absolute bottom-20 px-5 w-[450px]">
-                            <span>
-                                {filmGenres.join(", ")}
-                            </span>
+                            {filmGenres.map((item, i) => (
+                                <span key={i}>
+                                    {item}
+                                    {i < filmGenres.length - 1 && ", "}
+                                </span>
+                            ))}
                             <h1 className='text-[50px] text-white font-bold'>
                                 The <br />
                                 <span>Sympathizer</span>

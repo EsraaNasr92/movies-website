@@ -36,9 +36,9 @@ function App() {
             </div>
             <div>
               <TrendingMovies />
+              <TrendingSeries />
               <Genres />
               <Banners />
-              <TrendingSeries />
               <ImdbTopMovies />
               <ImdbTopSeries />
             </div>
