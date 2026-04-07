@@ -8,6 +8,7 @@ import ImdbTopMovies from './components/ImdbTopMovies';
 import ImdbTopSeries from './components/ImdbTopSeries';
 import Menu from './components/Menu';
 import RecommendedForYou from './components/RecommendedForYou';
+import SeriesBanner from './components/SeriesBanner';
 import TrendingMovies from './components/TrendingMovies';
 import TrendingSeries from './components/TrendingSeries';
 
@@ -36,6 +37,7 @@ function App() {
             </div>
             <div>
               <TrendingMovies />
+              <SeriesBanner />
               <TrendingSeries />
               <Genres />
               <Banners />

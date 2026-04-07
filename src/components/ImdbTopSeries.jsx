@@ -41,7 +41,7 @@ export default function ImdbTopSeries(){
     const filmCard = filmCards;
 
     return(
-        <section className="px-5 text-white mt-[33px]">
+        <section className="px-5 text-white mt-[60px]">
             <div className="flex justify-between items-center">
                 <h2 className='font-secondary text-[20px]'>IMDB Top Series</h2>
                 <div className="view">
