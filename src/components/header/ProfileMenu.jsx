@@ -6,7 +6,7 @@ export default function ProfileMenu(){
             <img
                 src={ProfileImage}
                 alt="Profile Image"
-                className='p-0.5 border-1 rounded-full border-[var(--primary-color)]'
+                className='p-0.5 border-1 rounded-full border-[var(--color-secondary)]'
             />
         </div>
     )
